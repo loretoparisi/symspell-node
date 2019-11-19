@@ -8,9 +8,11 @@ To build customized-symspell please refer to [customized-symspell](https://githu
 ```
 git clone https://github.com/MighTguY/customized-symspell
 cd customized-symspell/
-mvn compile
-mvn build
+sudo mvn compile
+sudo mvn build
 ```
+
+The compiled jar will be available in `symspell-lib/target/`. Copy the jar into the `symspell-node/lib/` folder.
 
 then
 

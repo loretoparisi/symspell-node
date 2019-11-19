@@ -104,6 +104,8 @@ public class SymSpellExample {
         .verbosity(Verbosity.ALL).build();
 
     // Damerau-Levenshtein
+    // QwertyDistance in cases when we have only phrases.
+    // It works well in cases of lookup and lookupCompound, mainly for bigrams, unigrams and trigrams :)
     damerauLevenshtein = new WeightedDamerauLevenshteinDistance(1, 1, 1, 1, null);
     customDamerauLevenshtein = new WeightedDamerauLevenshteinDistance(0.8f, 1.01f, 0.9f, 0.7f, new QwertyDistance());
 
