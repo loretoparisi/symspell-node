@@ -136,25 +136,25 @@ public class SymSpellExample {
 
     suggestionItems = symSpellCheck.lookupCompound("theq uick brown f ox jumps over the lazy dog", maxEd);
     for (SuggestionItem elem : suggestionItems) {
-      System.out.println("Element : " + elem.getTerm().trim());
+      System.out.println("compound : " + elem.getTerm().trim());
     }
 
     suggestionItems = symSpellCheck.lookupCompound(
         "Whereis th elove hehaD Dated FOREEVER forImuch of thepast who couqdn'tread in sixthgrade AND ins pired him",
         maxEd);
     for (SuggestionItem elem : suggestionItems) {
-      System.out.println("Element : " + elem.getTerm().trim());
+      System.out.println("compound : " + elem.getTerm().trim());
     }
 
     suggestionItems = symSpellCheck.lookupCompound("Whereis th elove hehaD", maxEd);
     for (SuggestionItem elem : suggestionItems) {
-      System.out.println("Element : " + elem.getTerm().trim());
+      System.out.println("compound : " + elem.getTerm().trim());
     }
 
     // lookup
     suggestionItems = symSpellCheck.lookup("resial", Verbosity.CLOSEST);
     for (SuggestionItem elem : suggestionItems) {
-      System.out.println("Element : " + elem.getTerm().trim());
+      System.out.println("lookup : " + elem.getTerm().trim());
     }
 
     // word break segmentation
